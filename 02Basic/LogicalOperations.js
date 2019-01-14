@@ -7,7 +7,7 @@ let isLoggedIn = true
 let hasPaymentToken = true
 let isGuest = true
 
-if (isVerified && isLoggedIn && hasPaymentToken) {
+if (!isVerified && isLoggedIn && hasPaymentToken) {
   console.log('Greeting message to user');
   console.log('Grant acess to paid course');
 
